@@ -1,0 +1,21 @@
+header {
+    background-image: linear-gradient(rgba(76, 77, 77, 0.5), rgba(76, 77, 77, 0.5)), url("../images/intro-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+
+
+
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0) !important;
+
+}
+
+.navbar-nav .nav-item .nav-link,
+.navbar-brand,
+.social {
+    color: white !important;
+}

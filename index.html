@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Session5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css"> -->
+
+</head>
+
+<body>
+    <div class="bg-info">
+        <div class="container py-5">
+            <h1>Product form</h1>
+            <label> product name</label>
+            <input type="text" class=" form-control  mb-2 is-invalid" id="productName" oninput="validationProductName()">
+            <label> product price</label>
+            <input type="text" class=" form-control  mb-2 " id="productPrice" oninput="validationProductPrice()">
+            <label> product Model</label>
+            <input type="text" class=" form-control  mb-2" id="productModel">
+            <label> product status</label>
+            <input type="text" class=" form-control  mb-2" id="productStatus">
+            <button class="btn btn-danger" id="addAndEditButton">Add product</button>
+
+            <input type="text" class="form-control mx-auto w-75 my-5" placeholder="Search"
+                oninput="searchProduct(this.value)" id="searchInput">
+
+            <table class="table table-striped  table-dark my-5">
+                <thead>
+                    <th>index</th>
+                    <th>Name</th>
+                    <th>price</th>
+                    <th>model</th>
+                    <th>status</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </thead>
+                <tbody id="tableBody">
+                    <tr id="tableRow">
+                        <!-- <td>1</td>
+                        <td>samsung</td>
+                        <td>5000</td>
+                        <td>2024</td>
+                        <td>Good</td>
+                        <td><button class="btn btn-outline-info">Delete</button></td>
+                        <td><button class="btn btn-outline-danger">Update</button></td> -->
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
